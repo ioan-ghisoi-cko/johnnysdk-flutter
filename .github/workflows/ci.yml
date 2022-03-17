@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build & Release
+    name: Test
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
@@ -17,6 +17,6 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '2.2.0'
+          flutter-version: '2.16.1'
       - run: flutter pub get
       - run: flutter test
