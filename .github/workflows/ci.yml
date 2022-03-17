@@ -7,22 +7,17 @@ on:
             - master
 
 jobs:
-  lint:
+  build:
+    # use ubuntu's latest OS
     runs-on: ubuntu-latest
+    # use the google/dart container (this makes `dart` available to use)
+    container:
+      image: google/dart:latest
+
+    # checkout the code, run pub get and finally run tests
     steps:
-      - name: Setup Repository
-        uses: actions/checkout@v2
-
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@v1
-
-      - name: Install Pub Dependencies
-        run: dart pub get
-
-      - name: Verify Formatting
-        run: dart format --output=none --set-exit-if-changed .
-      - name: Analyze Project Source
-        run: dart analyze
-
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: pub get
       - name: Run tests
-        run: dart test
+        run: pub run test
