@@ -20,10 +20,10 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: $
+          java-version: '11'
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: $
+          flutter-version: "2.5.3"
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
