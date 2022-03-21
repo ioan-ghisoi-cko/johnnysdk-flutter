@@ -1,7 +1,7 @@
 name: johnnysdk_flutter
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: This makes magic happen
+version: 0.0.2
+homepage: https://github.com/ioan-ghisoi-cko/johnnysdk-flutter
 
 environment:
   sdk: ">=2.14.0 <3.0.0"
