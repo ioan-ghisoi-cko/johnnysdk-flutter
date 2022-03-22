@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:johnnysdk_flutter/johnnysdk_flutter.dart';
+import 'package:johnnysdk_flutter/main.dart';
 import 'dart:developer';
 
 Future<void> main() async {

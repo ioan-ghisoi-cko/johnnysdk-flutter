@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:johnnysdk_flutter/johnnysdk_flutter.dart';
+import 'package:johnnysdk_flutter/main.dart';
 import 'package:nock/nock.dart';
 
 void main() {
